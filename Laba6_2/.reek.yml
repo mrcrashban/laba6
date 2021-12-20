@@ -1,0 +1,6 @@
+---
+detectors:
+  # Следим за дублями вызовов методов везде, кроме тестов.
+  DuplicateMethodCall:
+    exclude:
+      - TestNeibr
