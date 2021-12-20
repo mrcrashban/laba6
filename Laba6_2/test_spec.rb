@@ -11,4 +11,3 @@ describe 'main' do
     expect(input_check(0.0001)).to eq(0.42976302800720295)
   end
 end
-
