@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 def integral_formula(xyz, accuracy)
-  (xyz / Math.sqrt(1 + xyz**3)) * accuracy
+  (xyz / Math.sqrt(1 + (xyz**3))) * accuracy
 end
 
 def square(accuracy)
