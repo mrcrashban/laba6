@@ -18,5 +18,10 @@ def square(accuracy)
 end
 
 def input_check(text)
-  square(text).find { |current_integral| (0.429798384032304 - current_integral) < text }
+  square(text).find.each_with_index do |current_integral, _index|
+    if (0.429798384032304 - current_integral) < text
+      puts "Integral = #{current_integral}, Iteration = #{_index}"
+      break end
+  end
+
 end
